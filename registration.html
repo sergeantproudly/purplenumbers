@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+	<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<title>Purple Numbers - Premium Rate Numbers</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="assets/js/html5.js"></script> 
+	<script type="text/javascript">
+		var E=('article:aside:audio:canvas:figure:footer:header:hgroup:nav:section:video:output:details:keygen:meter:progress:figcaption:main:mark:summary:time:wbr').split(':');
+		for(var c=0;c<E.length;c++){document.createElement(E[c]);} 
+	</script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="layout">	
+		<header>
+			<div class="holder wide">
+				<a href="#" id="logo"><img src="images/logo.svg" alt="Purple Numbers - Premium Rate Numbers" title="Purple Numbers - Premium Rate Numbers"></a>
+
+				<div class="menu-holder">
+					<nav id="menu-main">
+						<ul>						
+							<li><a href="about.html">About us</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="solution.html">Solution</a></li>
+							<li><a href="payments.html">Payments</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="contacts.html">Contacts</a></li>
+							<li><a href="#">Test panel</a></li>
+						</ul>
+					</nav>
+
+					<div id="bl-profile">
+						<a href="registration.html" id="btn-sign-up" class="btn type2">SIGN UP</a>
+						<a href="#" id="btn-sign-in" class="btn">SIGN IN</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section>
+			<div class="holder">
+				<h1 class="al-center">Registration</h1>
+			</div>
+		</section>
+
+		<section class="gray">
+			<div class="holder">
+				
+				<div id="bl-registration-form">
+					<form action="#" method="post">
+					<div class="form">
+						<div class="types">
+							<div class="label">Personality type</div>
+							<div class="line"><input type="radio" name="type" value="person" id="type-person" checked="checked"><label for="type-person">Private person</label></div>
+							<div class="line"><input type="radio" name="type" value="company" id="type-company"><label for="type-company">Company</label></div>
+						</div>
+
+						<div class="form-section">
+							<div class="input-holder"><input type="email" name="email" maxlength="255" placeholder="E-mail *" required value=""><i>E-mail</i></div>
+							<div class="input-holder"><input type="password" name="password" maxlength="255" placeholder="Password *" required value=""><i>Password</i></div>
+							<div class="input-holder"><input type="password" name="confirm-password" maxlength="255" placeholder="Confirm password *" required value=""><i>Confirm password</i></div>
+						</div>
+
+						<div id="form-section-person">
+							<div class="form-section">
+								<div class="input-holder"><input type="text" name="firstname" maxlength="255" placeholder="First name *" value=""><i>First name</i></div>
+								<div class="input-holder"><input type="text" name="lastname" maxlength="255" placeholder="Last name *" value=""><i>Last name</i></div>
+							</div>
+
+							<div class="form-section">
+								<div class="input-holder">
+									<select name="country" placeholder="Residential country">
+										<option>USA</option>
+										<option>UK</option>
+										<option>France</option>
+										<option>Germany</option>
+										<option>Belgium</option>
+									</select>
+									<i>Residential country</i>
+								</div>
+								<div class="input-holder"><input type="text" name="zip" maxlength="255" placeholder="Residential ZIP" value=""><i>Residential ZIP</i></div>
+								<div class="input-holder"><input type="text" name="city" maxlength="255" placeholder="Residential city" value=""><i>Residential city</i></div>
+								<div class="input-holder"><input type="text" name="street" maxlength="255" placeholder="Residential street" value=""><i>Residential street</i></div>
+							</div>
+						</div>
+						
+						<div id="form-section-company" class="hidden">
+							<div class="form-section">
+								<div class="input-holder"><input type="text" name="firstname" maxlength="255" placeholder="First name *" value=""><i>First name</i></div>
+								<div class="input-holder"><input type="text" name="lastname" maxlength="255" placeholder="Last name *" value=""><i>Last name</i></div>
+								<div class="input-holder"><input type="text" name="companyname" maxlength="255" placeholder="Company name *" value=""><i>Company name</i></div>
+							</div>
+
+							<div class="form-section">
+								<div class="input-holder">
+									<select name="residential-country" placeholder="Residential country">
+										<option>USA</option>
+										<option>UK</option>
+										<option>France</option>
+										<option>Germany</option>
+										<option>Belgium</option>
+									</select>
+									<i>Residential country</i>
+								</div>
+								<div class="input-holder"><input type="text" name="residential-zip" maxlength="255" placeholder="Residential ZIP" value=""><i>Residential ZIP</i></div>
+								<div class="input-holder"><input type="text" name="residential-city" maxlength="255" placeholder="Residential city" value=""><i>Residential city</i></div>
+								<div class="input-holder"><input type="text" name="residential-street" maxlength="255" placeholder="Residential street" value=""><i>Residential street</i></div>
+								
+								<div class="input-holder"><input type="text" name="post-street" maxlength="255" placeholder="Residential street" value=""><i>Post street</i></div>
+								<div class="input-holder"><input type="text" name="post-city" maxlength="255" placeholder="Residential city" value=""><i>Post city</i></div>			
+								<div class="input-holder"><input type="text" name="post-zip" maxlength="255" placeholder="Residential ZIP" value=""><i>Post ZIP</i></div>					
+								<div class="input-holder">
+									<select name="post-country" placeholder="Post country">
+										<option>USA</option>
+										<option>UK</option>
+										<option>France</option>
+										<option>Germany</option>
+										<option>Belgium</option>
+									</select>
+									<i>Post country</i>
+								</div>
+
+								<div class="input-holder"><input type="text" name="registration-no" maxlength="255" placeholder="Registration no." value=""><i>Registration no.</i></div>
+								<div class="input-holder"><input type="text" name="taxvat-no" maxlength="255" placeholder="Tax/VAT no." value=""><i>Tax/VAT no.</i></div>
+								<div class="input-holder"><input type="text" name="phone-no" maxlength="255" placeholder="Fixed phone no." value=""><i>Fixed phone no.</i></div>
+							</div>
+						</div>
+	
+						<div class="cb-line"><input type="checkbox" name="agree" id="registration-agree"><label for="registration-agree">Accept <a href="#">Terms & Conditions</a></label></div>
+
+						<!-- fixme capcha -->
+						<img src="images/_capcha.png" alt="fixme capcha" title="fixme capcha" style="margin-bottom: 24px;">
+
+						<input type="submit" name="subm" class="btn" value="Create new account" data-submit-btn="true">
+					</div>
+					</form>
+				</div>
+
+			</div>
+		</section>
+
+		<footer>
+			<div class="holder wide">
+				<div id="footer-logo"><a href="#"><img src="images/logo.svg" alt="Purple Numbers - Premium Rate Numbers" title="Purple Numbers - Premium Rate Numbers"></a></div>
+				<div id="copyright">&copy;2012 &#150; 2018 Purple Numbers</div>
+				
+				<ul id="footer-menu">
+					<li><a href="#">Terms & Conditions</a></li><!--
+					--><li><a href="#">Privacy Policy</a></li><!--
+					--><li><a href="#">AML/KYC</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
