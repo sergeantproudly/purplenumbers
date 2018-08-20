@@ -68,10 +68,6 @@ function initElements(element) {
 				hideModal();
 			}
 		}
-		if (!$(e.target).closest('#search').length) {
-			$('#search').removeClass('opened');
-			$('#search').prev('ul').stop().animate({opacity: 1}, __animationSpeed);
-		}
 		$('.confirm-popup').each(function(i, confirm) {
 			if ($(confirm).css('display') == 'block') {
 				if ($(e.target).closest('.confirm-popup') != $(confirm)) {
@@ -414,5 +410,32 @@ function mobileSelectInit() {
 			});
 		}
 
+		// SIGN IN
+		// fixme
+		$('#btn-sign-in').click(function() {
+			hideModal();
+			showModal('modal-authorisation');
+		});
+
+		$('#modal-authorisation .forget').click(function() {
+			hideModal();
+			showModal('modal-forget');
+		});
+
+		// fixme (test)
+		$('#modal-authorisation form input[name="pswd"]').on('keyup mousedown change', function() {
+			if ($(this).val() && $(this).val() != 'password') {
+				$('.error[for="authorisation-pswd"]').stop().slideDown(__animationSpeed);
+			} else {
+				$('.error[for="authorisation-pswd"]').stop().slideUp(__animationSpeed);
+			}
+		});
+
+		// fixme (test)
+		$('#modal-forget .btn').click(function() {
+			hideModal();
+			showModal('modal-done');
+			return false;
+		});
 	})
 })(jQuery)
