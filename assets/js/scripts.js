@@ -319,8 +319,8 @@ function mobileSelectInit() {
 		});
 
 		// BURGER
-		if (__isMobile) {
-			$('.menu-holder').click(function() {
+		$('.menu-holder').click(function() {
+			if (__isMobile) {
 				if (!$('html').hasClass('html-mobile-opened')) {
 					if (!$(this).children('.close').length) {
 						$(this).append('<div class="close"></div>');
@@ -342,8 +342,8 @@ function mobileSelectInit() {
 						$('html').removeClass('html-modal-long').find('#layout').css('height', 'auto');
 					}
 				}
-			});
-		}
+			}
+		});
 
 		// MOBILE SLICK
 		if (__isMobileTabletMiddle) {
