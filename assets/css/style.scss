@@ -2330,13 +2330,44 @@ footer {
 			display: block;
 			font-size: 16px;
 			line-height: 1.31;
-			padding: 30px 0;
-			margin-top: -1px;
-			border-top: 1px solid #DFDDE2;
-			border-bottom: 1px solid #DFDDE2;
+			padding-bottom: 20px;
+
+			&:after {
+				content: '';
+				display: block;
+				height: 1px; 
+				overflow: hidden;
+				margin-left: 321px;
+				background-color: #DFDDE2;
+
+				@media (max-width: $adaptive-width-mobile) {
+					display: none;
+				}
+			}
 
 			@media (max-width: $adaptive-width-mobile) {
 				font-size: 14px;
+				margin-bottom: 20px;
+			}
+
+			.photo {
+				width: 279px;
+				float: left;
+				margin-bottom: 20px;
+
+				@media (max-width: $adaptive-width-mobile) {
+					float: none;
+					width: 100%;
+					margin-bottom: 14px; 
+				}
+			}
+
+			.info {
+				margin: 0 0 20px 321px;
+
+				@media (max-width: $adaptive-width-mobile) {
+					margin: 0;
+				}
 			}
 
 			.date {
